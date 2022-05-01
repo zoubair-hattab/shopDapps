@@ -65,7 +65,7 @@ function App() {
         const producCount = await deployedContract.methods.count().call();
         setProductsCount(producCount);
       } else {
-        window.alert("Please connect your wallet with Ganache");
+        window.alert("Please connect your wallet with Ropsten  Network");
       }
     };
     web3Api.web3 && loadContracts();
